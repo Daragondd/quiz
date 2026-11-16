@@ -98,6 +98,8 @@ input[type="radio"] {
     cursor: pointer;
     display: grid;
     place-items: center;
+    box-sizing: border-box;
+    flex-shrink: 0;
 }
 
 input[type="radio"]::before {
@@ -108,6 +110,7 @@ input[type="radio"]::before {
     box-shadow: inset 10px 10px #6933DC;
     transition: .2s ease transform;
     transform: scale(0);
+    box-sizing: border-box;
 }
 
 input[type="radio"]:checked::before {

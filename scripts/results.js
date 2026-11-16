@@ -51,12 +51,11 @@
             console.log(this.quiz)
             let number = 0;
             this.quiz.questions.forEach(question => {
-
                 const questionElement = document.createElement("div");
                 questionElement.classList.add("question");
                 const questionTitleElement = document.createElement("h2");
                 questionTitleElement.classList.add("test_title");
-                questionTitleElement.innerHTML = "<span>Вопрос " + question.id +
+                questionTitleElement.innerHTML = "<span>Вопрос " + String(number+1) +
                     ": </span>" + question.question
                 questionElement.appendChild(questionTitleElement);
                 const optionsElement = document.createElement("div");

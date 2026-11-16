@@ -54,6 +54,8 @@ input[type="radio"] {
     border-radius: 50%;
     display: grid;
     place-items: center;
+    box-sizing: border-box;
+    flex-shrink: 0;
 }
 
 .correct label {
