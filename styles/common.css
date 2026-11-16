@@ -1,0 +1,145 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: "Museo Sans Cyrl";
+    src: url("../fonts/MuseoSansCyrl500.ttf");
+}
+
+@font-face {
+    font-family: "Museo Sans Cyrl Bold";
+    src: url("../fonts/MuseoSansCyrl700.ttf");
+}
+
+body {
+    font-family: "Museo Sans Cyrl", sans-serif;
+    color: #333333;
+}
+
+span {
+    color: #6933DC;
+}
+
+.logo {
+    width: 226px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.big_title {
+    font-family: "Museo Sans Cyrl Bold", sans-serif;
+    font-size: 54px;
+    line-height: 65px;
+}
+
+.title {
+    font-family: 'Museo Sans Cyrl Bold', sans-serif;
+    font-size: 48px;
+    line-height: 58px;
+}
+
+.header {
+    padding: 40px 0;
+    border-bottom: 1px solid #DCDCF3;
+}
+
+.button {
+    padding: 14px 35px;
+    border-radius: 6px;
+    font-size: 17px;
+    line-height: 20px;
+    border: none;
+    color: #6933DC;
+    cursor: pointer;
+    background: transparent;
+    text-decoration: none;
+}
+
+.button_border {
+    border: 1px solid #6933DC;
+}
+
+.button_border:hover {
+    background-color: #6933DC;
+    color: #FFFFFF;
+}
+
+.button_border:disabled {
+    border-color: #dfdfdf;
+    color: #dfdfdf;
+    background: transparent;
+    cursor: not-allowed;
+}
+
+
+a.button{
+    display: inline-block;
+}
+
+.button_colorful:hover{
+    background-color: #401a9e;
+}
+
+.button_colorful:disabled {
+    background-color: #dfdfdf;
+    border-color: #dfdfdf;
+    cursor: not-allowed;
+}
+
+.button_colorful {
+    background-color: #6933DC;
+    color: #FFFFFF;
+    border: 1px solid #6933DC;
+    transition: all .4s;
+}
+
+.footer {
+    padding: 40px 0;
+    text-align: center;
+    font-size: 13px;
+    line-height: 16px;
+    color: #DCDCF3;
+}
+
+input {
+    border: none;
+}
+
+.link_skip_text {
+    font-size: 17px;
+    line-height: 20px;
+    color: #6933DC;
+}
+
+.link_skip {
+    display: flex;
+    justify-content: flex-end;
+    gap: 13px;
+    margin-top: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.link_skip img {
+    width: 8px;
+}
+
+.pre_title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #DCDCF3;
+}
+
+.pre_title_colorful {
+    color: #6933DC;
+}

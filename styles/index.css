@@ -1,0 +1,19 @@
+.main {
+    margin-top: 190px;
+    margin-bottom: 232px;
+}
+
+.main_container {
+    display: flex;
+}
+
+.main_description {
+    font-size: 20px;
+    line-height: 24px;
+    max-width: 486px;
+    margin: 40px 0 60px 0;
+}
+
+
+
+

@@ -1,0 +1,147 @@
+.test_container {
+    margin-top: 20px;
+    margin-bottom: 56px;
+}
+
+.test_progress_bar {
+    display: flex;
+    gap: 130px;
+    margin-top: 60px;
+}
+
+.progress_bar_item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.progress_bar_item:not(:last-child)::before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 10px;
+    left: 28px;
+    width: 184px;
+    height: 6px;
+    background-color: #DCDCF3;
+}
+
+.progress_bar_item.complete:not(:last-child)::before {
+    background: #6933DC;
+}
+
+
+.progress_bar_item_circle {
+    width: 26px;
+    height: 26px;
+    background: #DCDCF3;
+    border-radius: 50%;
+}
+
+.progress_bar_item.complete .progress_bar_item_circle{
+    background: #6933DC;
+}
+
+.progress_bar_item.active .progress_bar_item_circle{
+    border: 6px solid #6933DC;
+    box-sizing: border-box
+}
+
+
+.progress_bar_item_text {
+    font-size: 13px;
+    line-height: 16px;
+    color: #333333;
+    margin-top: 10px;
+}
+
+.test_question {
+    margin-top: 80px;
+}
+
+.test_title {
+    font-family: 'Museo Sans Cyrl Bold', sans-serif;
+    font-size: 36px;
+    line-height: 43px;
+    margin-bottom: 40px;
+}
+
+.test_question_options {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-height: 344px;
+}
+
+.test_question_option {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    cursor: pointer;
+}
+
+.test_question_option label {
+    font-size: 20px;
+    line-height: 24px;
+    color: #333333;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #6933DC;
+    border-radius: 50%;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+}
+
+input[type="radio"]::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    box-shadow: inset 10px 10px #6933DC;
+    transition: .2s ease transform;
+    transform: scale(0);
+}
+
+input[type="radio"]:checked::before {
+    transform: scale(1);
+}
+
+.test_actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.test_timer {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.test_timer_text {
+    font-size: 17px;
+    line-height: 20px;
+    color: #6933DC;
+}
+
+.test_timer_clock {
+    font-size: 10px;
+    line-height: 28px;
+    text-align: center;
+    color: #333333;
+    background-image: url("../images/timer.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 27px;
+    height: 29px;
+}
+
